@@ -32,6 +32,6 @@ Craftable Spawners: Spawning can be activated or deactivated by "gamerule spawne
 - Creeper
 
 Downlaod actual .jar
-https://github.com/netquick/EasySurvival/blob/master/EasySurvival.jar
+https://github.com/netquick/EasySurvivalMod/releases/download/easysurvival/easysurvival-1.20.1.jar
 
 # EasySurvivalMod
