@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:quartz"
+    },
+    "b": {
+      "tag": "forge:tag_stick"
+    }
+  },
+  "result": {
+    "item": "easysurvival:quarz_sword",
+    "count": 1
+  }
+}

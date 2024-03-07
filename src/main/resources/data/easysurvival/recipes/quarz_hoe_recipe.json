@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa",
+    " b",
+    " b"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:quartz"
+    },
+    "b": {
+      "tag": "forge:tag_stick"
+    }
+  },
+  "result": {
+    "item": "easysurvival:quarz_hoe",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "easysurvival:custom/forge",
+  "textures": {
+    "all": "easysurvival:block/forgefront",
+    "particle": "easysurvival:block/forgefront",
+    "forgeTop": "easysurvival:block/forgetop",
+    "ForgeFront": "easysurvival:block/forgefront",
+    "ForgeSide": "easysurvival:block/forgeside"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:kelp"
+    },
+    "b": {
+      "tag": "minecraft:leaves"
+    }
+  },
+  "result": {
+    "item": "easysurvival:spawner_slime",
+    "count": 1
+  }
+}

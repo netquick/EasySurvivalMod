@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    " b ",
+    " b "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:basalt"
+    },
+    "b": {
+      "tag": "forge:tag_stick"
+    }
+  },
+  "result": {
+    "item": "easysurvival:basalt_pickaxe",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "easysurvival:custom/enchantmenttable",
+  "textures": {
+    "all": "easysurvival:block/enchantmenttexture",
+    "particle": "easysurvival:block/enchantmenttexture",
+    "Cover": "easysurvival:block/cover",
+    "texture": "easysurvival:block/enchantmenttexture",
+    "TopTexture": "easysurvival:block/toptexture",
+    "Paper": "easysurvival:block/paper"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,3094 @@
+{
+  "mod_elements": [
+    {
+      "name": "NetherStick",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_stick",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/easysurvival/models/item/nether_stick.json",
+          "src/main/java/ch/netquick/easysurvival/item/NetherStickItem.java"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "NetherStickRecipe",
+      "type": "recipe",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_stick_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/nether_stick_recipe.json"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "Crop",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/easysurvival/models/item/crop.json",
+          "src/main/resources/assets/easysurvival/models/block/crop.json",
+          "src/main/java/ch/netquick/easysurvival/block/CropBlock.java",
+          "src/main/java/ch/netquick/easysurvival/block/entity/CropBlockEntity.java",
+          "src/main/resources/assets/easysurvival/blockstates/crop.json"
+        ]
+      },
+      "path": "~/Crop_Plants"
+    },
+    {
+      "name": "CropGUI",
+      "type": "gui",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/world/inventory/CropGUIMenu.java",
+          "src/main/java/ch/netquick/easysurvival/client/gui/CropGUIScreen.java"
+        ]
+      },
+      "path": "~/Crop_Plants"
+    },
+    {
+      "name": "CropUpdateTick",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/CropUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crop_Plants"
+    },
+    {
+      "name": "NetherrackPickaxe",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherrack_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/item/NetherrackPickaxeItem.java",
+          "src/main/resources/assets/easysurvival/models/item/netherrack_pickaxe.json"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "NetherrackAxe",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherrack_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/easysurvival/models/item/netherrack_axe.json",
+          "src/main/java/ch/netquick/easysurvival/item/NetherrackAxeItem.java"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "NetherrackSword",
+      "type": "tool",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherrack_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/item/NetherrackSwordItem.java",
+          "src/main/resources/assets/easysurvival/models/item/netherrack_sword.json"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "NetherrackShovel",
+      "type": "tool",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherrack_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/easysurvival/models/item/netherrack_shovel.json",
+          "src/main/java/ch/netquick/easysurvival/item/NetherrackShovelItem.java"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "NetherrackHoe",
+      "type": "tool",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherrack_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/item/NetherrackHoeItem.java",
+          "src/main/resources/assets/easysurvival/models/item/netherrack_hoe.json"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "NetherrackPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherrack_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/netherrack_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "NetherrackAxeRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherrack_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/netherrack_axe_recipe.json"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "NetherrackSwordRecipe",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherrack_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/netherrack_sword_recipe.json"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "NetherrackShovelRecipe",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherrack_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/netherrack_shovel_recipe.json"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "NetherrackHoeRecipe",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherrack_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/netherrack_hoe_recipe.json"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "TreeCrop",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tree_crop",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/block/entity/TreeCropBlockEntity.java",
+          "src/main/resources/assets/easysurvival/blockstates/tree_crop.json",
+          "src/main/resources/assets/easysurvival/models/block/tree_crop.json",
+          "src/main/java/ch/netquick/easysurvival/block/TreeCropBlock.java",
+          "src/main/resources/assets/easysurvival/models/item/tree_crop.json"
+        ]
+      },
+      "path": "~/Crop_Trees"
+    },
+    {
+      "name": "TreeCropGUI",
+      "type": "gui",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tree_crop_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/client/gui/TreeCropGUIScreen.java",
+          "src/main/java/ch/netquick/easysurvival/world/inventory/TreeCropGUIMenu.java"
+        ]
+      },
+      "path": "~/Crop_Trees"
+    },
+    {
+      "name": "TreeCropUpdateTick",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tree_crop_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/TreeCropUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crop_Trees"
+    },
+    {
+      "name": "CropRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crop_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/crop_recipe.json"
+        ]
+      },
+      "path": "~/Crop_Plants"
+    },
+    {
+      "name": "BasaltPickaxe",
+      "type": "tool",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basalt_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/easysurvival/models/item/basalt_pickaxe.json",
+          "src/main/java/ch/netquick/easysurvival/item/BasaltPickaxeItem.java"
+        ]
+      },
+      "path": "~/Basalt_Tools"
+    },
+    {
+      "name": "BasaltAxe",
+      "type": "tool",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basalt_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/item/BasaltAxeItem.java",
+          "src/main/resources/assets/easysurvival/models/item/basalt_axe.json"
+        ]
+      },
+      "path": "~/Basalt_Tools"
+    },
+    {
+      "name": "BasaltSword",
+      "type": "tool",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basalt_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/easysurvival/models/item/basalt_sword.json",
+          "src/main/java/ch/netquick/easysurvival/item/BasaltSwordItem.java"
+        ]
+      },
+      "path": "~/Basalt_Tools"
+    },
+    {
+      "name": "BasaltShovel",
+      "type": "tool",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basalt_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/item/BasaltShovelItem.java",
+          "src/main/resources/assets/easysurvival/models/item/basalt_shovel.json"
+        ]
+      },
+      "path": "~/Basalt_Tools"
+    },
+    {
+      "name": "BasaltHoe",
+      "type": "tool",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basalt_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/item/BasaltHoeItem.java",
+          "src/main/resources/assets/easysurvival/models/item/basalt_hoe.json"
+        ]
+      },
+      "path": "~/Basalt_Tools"
+    },
+    {
+      "name": "BasaltPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basalt_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/basalt_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/Basalt_Tools"
+    },
+    {
+      "name": "BasaltAxeRecipe",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basalt_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/basalt_axe_recipe.json"
+        ]
+      },
+      "path": "~/Basalt_Tools"
+    },
+    {
+      "name": "BasaltSwordRecipe",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basalt_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/basalt_sword_recipe.json"
+        ]
+      },
+      "path": "~/Basalt_Tools"
+    },
+    {
+      "name": "BasaltShovelRecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basalt_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/basalt_shovel_recipe.json"
+        ]
+      },
+      "path": "~/Basalt_Tools"
+    },
+    {
+      "name": "BasaltHoeRecipe",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basalt_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/basalt_hoe_recipe.json"
+        ]
+      },
+      "path": "~/Basalt_Tools"
+    },
+    {
+      "name": "NetherrackArmor",
+      "type": "armor",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherrack_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true,
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/item/NetherrackArmorItem.java",
+          "src/main/resources/assets/easysurvival/models/item/netherrack_armor_chestplate.json",
+          "src/main/resources/assets/easysurvival/models/item/netherrack_armor_boots.json",
+          "src/main/resources/assets/easysurvival/models/item/netherrack_armor_leggings.json",
+          "src/main/resources/assets/easysurvival/models/item/netherrack_armor_helmet.json"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "NetherrackArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherrack_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/netherrack_armor_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "NetherrackArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherrack_armor_body_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/netherrack_armor_body_recipe.json"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "NetherrackArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherrack_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/netherrack_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "NetherrackArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherrack_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/netherrack_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "QuarzPickaxe",
+      "type": "tool",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quarz_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/easysurvival/models/item/quarz_pickaxe.json",
+          "src/main/java/ch/netquick/easysurvival/item/QuarzPickaxeItem.java"
+        ]
+      },
+      "path": "~/Quarz_Tools"
+    },
+    {
+      "name": "QuarzAxe",
+      "type": "tool",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quarz_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/item/QuarzAxeItem.java",
+          "src/main/resources/assets/easysurvival/models/item/quarz_axe.json"
+        ]
+      },
+      "path": "~/Quarz_Tools"
+    },
+    {
+      "name": "QuarzSword",
+      "type": "tool",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quarz_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/easysurvival/models/item/quarz_sword.json",
+          "src/main/java/ch/netquick/easysurvival/item/QuarzSwordItem.java"
+        ]
+      },
+      "path": "~/Quarz_Tools"
+    },
+    {
+      "name": "QuarzShovel",
+      "type": "tool",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quarz_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/easysurvival/models/item/quarz_shovel.json",
+          "src/main/java/ch/netquick/easysurvival/item/QuarzShovelItem.java"
+        ]
+      },
+      "path": "~/Quarz_Tools"
+    },
+    {
+      "name": "QuarzHoe",
+      "type": "tool",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quarz_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/item/QuarzHoeItem.java",
+          "src/main/resources/assets/easysurvival/models/item/quarz_hoe.json"
+        ]
+      },
+      "path": "~/Quarz_Tools"
+    },
+    {
+      "name": "QuarzPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quarz_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/quarz_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/Quarz_Tools"
+    },
+    {
+      "name": "QuarzAxeRecipe",
+      "type": "recipe",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quarz_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/quarz_axe_recipe.json"
+        ]
+      },
+      "path": "~/Quarz_Tools"
+    },
+    {
+      "name": "QuarzSwordRecipe",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quarz_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/quarz_sword_recipe.json"
+        ]
+      },
+      "path": "~/Quarz_Tools"
+    },
+    {
+      "name": "QuarzShovelRecipe",
+      "type": "recipe",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quarz_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/quarz_shovel_recipe.json"
+        ]
+      },
+      "path": "~/Quarz_Tools"
+    },
+    {
+      "name": "QuarzHoeRecipe",
+      "type": "recipe",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quarz_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/quarz_hoe_recipe.json"
+        ]
+      },
+      "path": "~/Quarz_Tools"
+    },
+    {
+      "name": "ShulkerBoxRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shulker_box_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/shulker_box_recipe.json"
+        ]
+      },
+      "path": "~/Misc_Recipes"
+    },
+    {
+      "name": "EnderpPearlRecipe",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enderp_pearl_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/enderp_pearl_recipe.json"
+        ]
+      },
+      "path": "~/Misc_Recipes"
+    },
+    {
+      "name": "TreeCropRecipe",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tree_crop_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/tree_crop_recipe.json"
+        ]
+      },
+      "path": "~/Crop_Trees"
+    },
+    {
+      "name": "NetherBucket",
+      "type": "recipe",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_bucket",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/nether_bucket.json"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "NetherLadderRecipe",
+      "type": "recipe",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_ladder_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/nether_ladder_recipe.json"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "NetherWorkbench",
+      "type": "recipe",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_workbench",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/nether_workbench.json"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "NetherForge",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_forge",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/nether_forge.json"
+        ]
+      },
+      "path": "~/Netherrack_Tools"
+    },
+    {
+      "name": "SpawnerBlaze",
+      "type": "block",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_blaze",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/easysurvival/models/item/spawner_blaze.json",
+          "src/main/resources/assets/easysurvival/models/block/spawner_blaze.json",
+          "src/main/resources/assets/easysurvival/blockstates/spawner_blaze.json",
+          "src/main/java/ch/netquick/easysurvival/block/SpawnerBlazeBlock.java"
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "SpawnerBlazeUpdateTick",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_blaze_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/SpawnerBlazeUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "SpawnerBlazeRecipe",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_blaze_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/spawner_blaze_recipe.json"
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "SpawnerSlimeUpdateTick",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_slime_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/SpawnerSlimeUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "SpawnerSlime",
+      "type": "block",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_slime",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/easysurvival/models/block/spawner_slime.json",
+          "src/main/java/ch/netquick/easysurvival/block/SpawnerSlimeBlock.java",
+          "src/main/resources/assets/easysurvival/models/item/spawner_slime.json",
+          "src/main/resources/assets/easysurvival/blockstates/spawner_slime.json"
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "SpawnerSlimeRecipe",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_slime_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/spawner_slime_recipe.json"
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "NetherWartRecipe",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nether_wart_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/nether_wart_recipe.json"
+        ]
+      },
+      "path": "~/Misc_Recipes"
+    },
+    {
+      "name": "SpawnerGhastUpdateTick",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_ghast_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/SpawnerGhastUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "SpawnerGhast",
+      "type": "block",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_ghast",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/block/SpawnerGhastBlock.java",
+          "src/main/resources/assets/easysurvival/models/block/spawner_ghast.json",
+          "src/main/resources/assets/easysurvival/models/item/spawner_ghast.json",
+          "src/main/resources/assets/easysurvival/blockstates/spawner_ghast.json"
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "SpawnerGhasRecipe",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_ghas_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/spawner_ghas_recipe.json"
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "EasyEnchantmentTable",
+      "type": "block",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_enchantment_table",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/block/EasyEnchantmentTableBlock.java",
+          "src/main/resources/assets/easysurvival/models/item/easy_enchantment_table.json",
+          "src/main/java/ch/netquick/easysurvival/block/entity/EasyEnchantmentTableBlockEntity.java",
+          "src/main/resources/assets/easysurvival/blockstates/easy_enchantment_table.json",
+          "src/main/resources/assets/easysurvival/models/block/easy_enchantment_table.json"
+        ]
+      },
+      "path": "~/EasyEnchantmentTable"
+    },
+    {
+      "name": "EasyEnchantmentTableUpdateTick",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_enchantment_table_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasyEnchantmentTableUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EasyEnchantmentTable"
+    },
+    {
+      "name": "EasyEnchantmentTableGUI",
+      "type": "gui",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_enchantment_table_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/network/EasyEnchantmentTableGUISlotMessage.java",
+          "src/main/java/ch/netquick/easysurvival/client/gui/EasyEnchantmentTableGUIScreen.java",
+          "src/main/java/ch/netquick/easysurvival/world/inventory/EasyEnchantmentTableGUIMenu.java"
+        ]
+      },
+      "path": "~/EasyEnchantmentTable"
+    },
+    {
+      "name": "EasyEnchantmentTableGUIClear",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_enchantment_table_gui_clear",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasyEnchantmentTableGUIClearProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EasyEnchantmentTable"
+    },
+    {
+      "name": "EasyEnchantmentTableGUIreset",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_enchantment_table_gu_ireset",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasyEnchantmentTableGUIresetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EasyEnchantmentTable"
+    },
+    {
+      "name": "EasyEnchantmentTableGUItakeItem1",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_enchantment_table_gu_itake_item_1",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasyEnchantmentTableGUItakeItem1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EasyEnchantmentTable"
+    },
+    {
+      "name": "EasyEnchantmentTableGUItakeItem2",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_enchantment_table_gu_itake_item_2",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasyEnchantmentTableGUItakeItem2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EasyEnchantmentTable"
+    },
+    {
+      "name": "EasyEnchantmentTableGUItakeItem3",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_enchantment_table_gu_itake_item_3",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasyEnchantmentTableGUItakeItem3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EasyEnchantmentTable"
+    },
+    {
+      "name": "EasyEnchantmentTableGUItakeItem4",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_enchantment_table_gu_itake_item_4",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasyEnchantmentTableGUItakeItem4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EasyEnchantmentTable"
+    },
+    {
+      "name": "EasyEnchantmentTableGUItakeItem5",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_enchantment_table_gu_itake_item_5",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasyEnchantmentTableGUItakeItem5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EasyEnchantmentTable"
+    },
+    {
+      "name": "EasyEnchantmentTableGUItakeItem6",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_enchantment_table_gu_itake_item_6",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasyEnchantmentTableGUItakeItem6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EasyEnchantmentTable"
+    },
+    {
+      "name": "EasyEnchantmentTableGUItakeItem7",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_enchantment_table_gu_itake_item_7",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasyEnchantmentTableGUItakeItem7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EasyEnchantmentTable"
+    },
+    {
+      "name": "EasyEnchantmentTableGUItakeItem8",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_enchantment_table_gu_itake_item_8",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasyEnchantmentTableGUItakeItem8Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EasyEnchantmentTable"
+    },
+    {
+      "name": "EasyEnchantmentTableGUItakeItem9",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_enchantment_table_gu_itake_item_9",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasyEnchantmentTableGUItakeItem9Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/EasyEnchantmentTable"
+    },
+    {
+      "name": "EasyEnchantmentTableRecipe",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_enchantment_table_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/easy_enchantment_table_recipe.json"
+        ]
+      },
+      "path": "~/EasyEnchantmentTable"
+    },
+    {
+      "name": "EasyAnvil",
+      "type": "block",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_anvil",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/block/entity/EasyAnvilBlockEntity.java",
+          "src/main/java/ch/netquick/easysurvival/block/EasyAnvilBlock.java",
+          "src/main/resources/assets/easysurvival/models/block/easy_anvil.json",
+          "src/main/resources/assets/easysurvival/models/item/easy_anvil.json",
+          "src/main/resources/assets/easysurvival/blockstates/easy_anvil.json"
+        ]
+      },
+      "path": "~/Easy_Anvil"
+    },
+    {
+      "name": "EasyAnvilGUI",
+      "type": "gui",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_anvil_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/client/gui/EasyAnvilGUIScreen.java",
+          "src/main/java/ch/netquick/easysurvival/world/inventory/EasyAnvilGUIMenu.java",
+          "src/main/java/ch/netquick/easysurvival/network/EasyAnvilGUISlotMessage.java"
+        ]
+      },
+      "path": "~/Easy_Anvil"
+    },
+    {
+      "name": "EasyAnvilRecipe",
+      "type": "recipe",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_anvil_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/easy_anvil_recipe.json"
+        ]
+      },
+      "path": "~/Easy_Anvil"
+    },
+    {
+      "name": "DedicatedStorageGUI",
+      "type": "gui",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dedicated_storage_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/client/gui/DedicatedStorageGUIScreen.java",
+          "src/main/java/ch/netquick/easysurvival/world/inventory/DedicatedStorageGUIMenu.java"
+        ]
+      },
+      "path": "~/DedicatedStorage"
+    },
+    {
+      "name": "SpawnersActive",
+      "type": "gamerule",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawnersActive",
+      "metadata": {
+        "type": "logic",
+        "files": []
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "EasyForgeUpdateTick",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_forge_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasyForgeUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Easy_Forge"
+    },
+    {
+      "name": "EasyForge",
+      "type": "block",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_forge",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/block/EasyForgeBlock.java",
+          "src/main/resources/assets/easysurvival/models/item/easy_forge.json",
+          "src/main/java/ch/netquick/easysurvival/block/entity/EasyForgeBlockEntity.java",
+          "src/main/resources/assets/easysurvival/models/block/easy_forge.json",
+          "src/main/resources/assets/easysurvival/blockstates/easy_forge.json"
+        ]
+      },
+      "path": "~/Easy_Forge"
+    },
+    {
+      "name": "EasyForgeGUI",
+      "type": "gui",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_forge_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/world/inventory/EasyForgeGUIMenu.java",
+          "src/main/java/ch/netquick/easysurvival/client/gui/EasyForgeGUIScreen.java"
+        ]
+      },
+      "path": "~/Easy_Forge"
+    },
+    {
+      "name": "EasyForgeRecipe",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_forge_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/easy_forge_recipe.json"
+        ]
+      },
+      "path": "~/Easy_Forge"
+    },
+    {
+      "name": "TeleporterPlate",
+      "type": "block",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleporter_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/easysurvival/models/block/teleporter_plate.json",
+          "src/main/java/ch/netquick/easysurvival/block/TeleporterPlateBlock.java",
+          "src/main/java/ch/netquick/easysurvival/block/entity/TeleporterPlateBlockEntity.java",
+          "src/main/resources/assets/easysurvival/models/item/teleporter_plate.json",
+          "src/main/resources/assets/easysurvival/blockstates/teleporter_plate.json"
+        ]
+      },
+      "path": "~/Teleporter"
+    },
+    {
+      "name": "TeleportSetGUI",
+      "type": "gui",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleport_set_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/world/inventory/TeleportSetGUIMenu.java",
+          "src/main/java/ch/netquick/easysurvival/client/gui/TeleportSetGUIScreen.java"
+        ]
+      },
+      "path": "~/Teleporter"
+    },
+    {
+      "name": "TeleporterGUI",
+      "type": "gui",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleporter_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/client/gui/TeleporterGUIScreen.java",
+          "src/main/java/ch/netquick/easysurvival/world/inventory/TeleporterGUIMenu.java"
+        ]
+      },
+      "path": "~/Teleporter"
+    },
+    {
+      "name": "TeleporterProc",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "teleporter_proc",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/TeleporterProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Teleporter"
+    },
+    {
+      "name": "EasyFridge",
+      "type": "block",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_fridge",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/block/entity/EasyFridgeBlockEntity.java",
+          "src/main/resources/assets/easysurvival/models/item/easy_fridge.json",
+          "src/main/resources/assets/easysurvival/models/block/easy_fridge.json",
+          "src/main/resources/assets/easysurvival/blockstates/easy_fridge.json",
+          "src/main/java/ch/netquick/easysurvival/block/EasyFridgeBlock.java"
+        ]
+      },
+      "path": "~/Easy_Fridge"
+    },
+    {
+      "name": "QuarzBlock",
+      "type": "recipe",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quarz_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/quarz_block.json"
+        ]
+      },
+      "path": "~/Misc_Recipes"
+    },
+    {
+      "name": "EasyTeleportRecipe",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_teleport_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/easy_teleport_recipe.json"
+        ]
+      },
+      "path": "~/Teleporter"
+    },
+    {
+      "name": "Elytra",
+      "type": "recipe",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elytra",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/elytra.json"
+        ]
+      },
+      "path": "~/Misc_Recipes"
+    },
+    {
+      "name": "PortableCraftingTable",
+      "type": "item",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portable_crafting_table",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/item/inventory/PortableCraftingTableInventoryCapability.java",
+          "src/main/java/ch/netquick/easysurvival/item/PortableCraftingTableItem.java",
+          "src/main/resources/assets/easysurvival/models/item/portable_crafting_table.json"
+        ]
+      },
+      "path": "~/Portable_CraftingTable"
+    },
+    {
+      "name": "PlaceCraftingTable",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "place_crafting_table",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/PlaceCraftingTableProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Portable_CraftingTable"
+    },
+    {
+      "name": "SpawnerPillager",
+      "type": "block",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_pillager",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/block/SpawnerPillagerBlock.java",
+          "src/main/resources/assets/easysurvival/models/item/spawner_pillager.json",
+          "src/main/resources/assets/easysurvival/models/block/spawner_pillager.json",
+          "src/main/resources/assets/easysurvival/blockstates/spawner_pillager.json"
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "SpawnerCreeper",
+      "type": "block",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_creeper",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/easysurvival/models/block/spawner_creeper.json",
+          "src/main/resources/assets/easysurvival/blockstates/spawner_creeper.json",
+          "src/main/java/ch/netquick/easysurvival/block/SpawnerCreeperBlock.java",
+          "src/main/resources/assets/easysurvival/models/item/spawner_creeper.json"
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "SpawnerCreeperUpdateTick",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_creeper_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/SpawnerCreeperUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "SpawnerWitherSkelettUpdateTick",
+      "type": "procedure",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_wither_skelett_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/SpawnerWitherSkelettUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "SpawnerPillagerUpdateTick",
+      "type": "procedure",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_pillager_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/SpawnerPillagerUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "SpawnerEvokerUpdateTick",
+      "type": "procedure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_evoker_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/SpawnerEvokerUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "SpawnerEvoker",
+      "type": "block",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_evoker",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/easysurvival/models/item/spawner_evoker.json",
+          "src/main/resources/assets/easysurvival/blockstates/spawner_evoker.json",
+          "src/main/resources/assets/easysurvival/models/block/spawner_evoker.json",
+          "src/main/java/ch/netquick/easysurvival/block/SpawnerEvokerBlock.java"
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "Trident",
+      "type": "recipe",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trident",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/trident.json"
+        ]
+      },
+      "path": "~/Misc_Recipes"
+    },
+    {
+      "name": "SpawnerWitherSkelett",
+      "type": "block",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_wither_skelett",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/block/SpawnerWitherSkelettBlock.java",
+          "src/main/resources/assets/easysurvival/models/item/spawner_wither_skelett.json",
+          "src/main/resources/assets/easysurvival/blockstates/spawner_wither_skelett.json",
+          "src/main/resources/assets/easysurvival/models/block/spawner_wither_skelett.json"
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "EasyIntake",
+      "type": "block",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_intake",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/easysurvival/models/block/easy_intake.json",
+          "src/main/resources/assets/easysurvival/blockstates/easy_intake.json",
+          "src/main/java/ch/netquick/easysurvival/block/EasyIntakeBlock.java",
+          "src/main/resources/assets/easysurvival/models/item/easy_intake.json",
+          "src/main/java/ch/netquick/easysurvival/block/entity/EasyIntakeBlockEntity.java"
+        ]
+      },
+      "path": "~/DedicatedStorage"
+    },
+    {
+      "name": "EasySaw",
+      "type": "block",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_saw",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/easysurvival/models/item/easy_saw.json",
+          "src/main/resources/assets/easysurvival/models/block/easy_saw.json",
+          "src/main/resources/assets/easysurvival/blockstates/easy_saw.json",
+          "src/main/java/ch/netquick/easysurvival/block/EasySawBlock.java",
+          "src/main/java/ch/netquick/easysurvival/block/entity/EasySawBlockEntity.java"
+        ]
+      },
+      "path": "~/Easy_Saw"
+    },
+    {
+      "name": "EasyFridgeGUI",
+      "type": "gui",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_fridge_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/world/inventory/EasyFridgeGUIMenu.java",
+          "src/main/java/ch/netquick/easysurvival/client/gui/EasyFridgeGUIScreen.java"
+        ]
+      },
+      "path": "~/Easy_Fridge"
+    },
+    {
+      "name": "EasyAnvilItemTaken",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_anvil_item_taken",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasyAnvilItemTakenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Easy_Anvil"
+    },
+    {
+      "name": "EasyFridgeUpdateTick",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_fridge_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasyFridgeUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Easy_Fridge"
+    },
+    {
+      "name": "EasySmelterGUI",
+      "type": "gui",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_smelter_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/client/gui/EasySmelterGUIScreen.java",
+          "src/main/java/ch/netquick/easysurvival/world/inventory/EasySmelterGUIMenu.java"
+        ]
+      },
+      "path": "~/Easy_Smelter"
+    },
+    {
+      "name": "EasyIntakeGUI",
+      "type": "gui",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_intake_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/world/inventory/EasyIntakeGUIMenu.java",
+          "src/main/java/ch/netquick/easysurvival/client/gui/EasyIntakeGUIScreen.java"
+        ]
+      },
+      "path": "~/DedicatedStorage"
+    },
+    {
+      "name": "EasySawRecipe",
+      "type": "recipe",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_saw_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/easy_saw_recipe.json"
+        ]
+      },
+      "path": "~/Easy_Saw"
+    },
+    {
+      "name": "EasyIntakeOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_intake_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasyIntakeOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/DedicatedStorage"
+    },
+    {
+      "name": "EasyForgeAuto",
+      "type": "block",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_forge_auto",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/block/entity/EasyForgeAutoBlockEntity.java",
+          "src/main/resources/assets/easysurvival/models/block/easy_forge_auto.json",
+          "src/main/resources/assets/easysurvival/models/item/easy_forge_auto.json",
+          "src/main/java/ch/netquick/easysurvival/block/EasyForgeAutoBlock.java",
+          "src/main/resources/assets/easysurvival/blockstates/easy_forge_auto.json"
+        ]
+      },
+      "path": "~/Easy_Forge"
+    },
+    {
+      "name": "EasySmelterUpdateTick",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_smelter_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasySmelterUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Easy_Smelter"
+    },
+    {
+      "name": "EasyAnvilUpdateTick",
+      "type": "procedure",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_anvil_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasyAnvilUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Easy_Anvil"
+    },
+    {
+      "name": "EasySurvival",
+      "type": "tab",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_survival",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "EasySmelter",
+      "type": "block",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_smelter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/easysurvival/models/block/easy_smelter.json",
+          "src/main/resources/assets/easysurvival/blockstates/easy_smelter.json",
+          "src/main/java/ch/netquick/easysurvival/block/EasySmelterBlock.java",
+          "src/main/java/ch/netquick/easysurvival/block/entity/EasySmelterBlockEntity.java",
+          "src/main/resources/assets/easysurvival/models/item/easy_smelter.json"
+        ]
+      },
+      "path": "~/Easy_Smelter"
+    },
+    {
+      "name": "EasyAnvilItemReset",
+      "type": "procedure",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_anvil_item_reset",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasyAnvilItemResetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Easy_Anvil"
+    },
+    {
+      "name": "EasySawUpdateTick",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_saw_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasySawUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Easy_Saw"
+    },
+    {
+      "name": "EasyFridgeRecipe",
+      "type": "recipe",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_fridge_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/easy_fridge_recipe.json"
+        ]
+      },
+      "path": "~/Easy_Fridge"
+    },
+    {
+      "name": "EasySawGUI",
+      "type": "gui",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_saw_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/world/inventory/EasySawGUIMenu.java",
+          "src/main/java/ch/netquick/easysurvival/client/gui/EasySawGUIScreen.java"
+        ]
+      },
+      "path": "~/Easy_Saw"
+    },
+    {
+      "name": "EasySmelterRecipe",
+      "type": "recipe",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_smelter_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/easy_smelter_recipe.json"
+        ]
+      },
+      "path": "~/Easy_Smelter"
+    },
+    {
+      "name": "EasyForgeAutoRecipe",
+      "type": "recipe",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_forge_auto_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/easy_forge_auto_recipe.json"
+        ]
+      },
+      "path": "~/Easy_Forge"
+    },
+    {
+      "name": "EasyIntakeRecipe",
+      "type": "recipe",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_intake_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/easy_intake_recipe.json"
+        ]
+      },
+      "path": "~/DedicatedStorage"
+    },
+    {
+      "name": "SpawnerPillagerRecipe",
+      "type": "recipe",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_pillager_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/spawner_pillager_recipe.json"
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "SpawnerCreeperRecipe",
+      "type": "recipe",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_creeper_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/spawner_creeper_recipe.json"
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "SpawnerEvokerRecipe",
+      "type": "recipe",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawner_evoker_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/spawner_evoker_recipe.json"
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "WitherSkelettonSpawnerRecipe",
+      "type": "recipe",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wither_skeletton_spawner_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/wither_skeletton_spawner_recipe.json"
+        ]
+      },
+      "path": "~/Spawner"
+    },
+    {
+      "name": "CobbleStoneRecipe",
+      "type": "recipe",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobble_stone_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/cobble_stone_recipe.json"
+        ]
+      },
+      "path": "~/Misc_Recipes"
+    },
+    {
+      "name": "EasyConverter",
+      "type": "block",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_converter",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/block/entity/EasyConverterBlockEntity.java",
+          "src/main/resources/assets/easysurvival/models/block/easy_converter.json",
+          "src/main/resources/assets/easysurvival/models/item/easy_converter.json",
+          "src/main/java/ch/netquick/easysurvival/block/EasyConverterBlock.java",
+          "src/main/resources/assets/easysurvival/blockstates/easy_converter.json"
+        ]
+      },
+      "path": "~/Easy_Converter"
+    },
+    {
+      "name": "EasyConverterGUI",
+      "type": "gui",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_converter_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/world/inventory/EasyConverterGUIMenu.java",
+          "src/main/java/ch/netquick/easysurvival/client/gui/EasyConverterGUIScreen.java"
+        ]
+      },
+      "path": "~/Easy_Converter"
+    },
+    {
+      "name": "EasyConverterUpdateTick",
+      "type": "procedure",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_converter_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/EasyConverterUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Easy_Converter"
+    },
+    {
+      "name": "EasyConverterRecipe",
+      "type": "recipe",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "easy_converter_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/easysurvival/recipes/easy_converter_recipe.json"
+        ]
+      },
+      "path": "~/Easy_Converter"
+    },
+    {
+      "name": "CraftingStickGUI",
+      "type": "gui",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crafting_stick_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/client/gui/CraftingStickGUIScreen.java",
+          "src/main/java/ch/netquick/easysurvival/world/inventory/CraftingStickGUIMenu.java"
+        ]
+      },
+      "path": "~/Portable_CraftingTable"
+    },
+    {
+      "name": "OpenCraftingGUI",
+      "type": "procedure",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "open_crafting_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/ch/netquick/easysurvival/procedures/OpenCraftingGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Portable_CraftingTable"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:forge:tag_leggings": [
+      "CUSTOM:NetherrackArmor.legs",
+      "Items.LEATHER_LEGGINGS",
+      "Items.CHAINMAIL_LEGGINGS",
+      "Items.IRON_LEGGINGS",
+      "Items.GOLDEN_LEGGINGS",
+      "Items.DIAMOND_LEGGINGS",
+      "Items.NETHERITE_LEGGINGS"
+    ],
+    "ITEMS:forge:tag_armor": [
+      "CUSTOM:NetherrackArmor.helmet",
+      "CUSTOM:NetherrackArmor.body",
+      "CUSTOM:NetherrackArmor.legs",
+      "CUSTOM:NetherrackArmor.boots",
+      "Items.LEATHER_HELMET",
+      "Items.LEATHER_CHESTPLATE",
+      "Items.LEATHER_LEGGINGS",
+      "Items.LEATHER_BOOTS",
+      "Items.CHAINMAIL_HELMET",
+      "Items.CHAINMAIL_CHESTPLATE",
+      "Items.CHAINMAIL_LEGGINGS",
+      "Items.CHAINMAIL_BOOTS",
+      "Items.TURTLE_HELMET",
+      "Items.IRON_HELMET",
+      "Items.IRON_CHESTPLATE",
+      "Items.IRON_LEGGINGS",
+      "Items.IRON_BOOTS",
+      "Items.GOLDEN_HELMET",
+      "Items.GOLDEN_CHESTPLATE",
+      "Items.GOLDEN_LEGGINGS",
+      "Items.GOLDEN_BOOTS",
+      "Items.DIAMOND_HELMET",
+      "Items.DIAMOND_CHESTPLATE",
+      "Items.DIAMOND_LEGGINGS",
+      "Items.DIAMOND_BOOTS",
+      "Items.NETHERITE_HELMET",
+      "Items.NETHERITE_CHESTPLATE",
+      "Items.NETHERITE_LEGGINGS",
+      "Items.NETHERITE_BOOTS"
+    ],
+    "ITEMS:forge:tag_log": [
+      "Blocks.LOG#0",
+      "Blocks.LOG#1",
+      "Blocks.LOG#2",
+      "Blocks.LOG#3",
+      "Blocks.LOG2#0",
+      "Blocks.LOG2#1",
+      "Blocks.WARPED_STEM",
+      "Blocks.CRIMSON_STEM",
+      "Blocks.STRIPPED_OAK_LOG",
+      "Blocks.STRIPPED_SPRUCE_LOG",
+      "Blocks.STRIPPED_BIRCH_LOG",
+      "Blocks.STRIPPED_JUNGLE_LOG",
+      "Blocks.STRIPPED_ACACIA_LOG",
+      "Blocks.STRIPPED_DARK_OAK_LOG",
+      "Blocks.STRIPPED_WARPED_STEM",
+      "Blocks.STRIPPED_CRIMSON_STEM",
+      "Blocks.DARK_OAK_WOOD",
+      "Blocks.MANGROVE_LOG",
+      "Blocks.CHERRY_LOG",
+      "Blocks.STRIPPED_CHERRY_LOG",
+      "Blocks.STRIPPED_MANGROVE_LOG"
+    ],
+    "ITEMS:forge:tag_helmet": [
+      "Items.IRON_HELMET",
+      "Items.CHAINMAIL_HELMET",
+      "Items.LEATHER_HELMET",
+      "Items.TURTLE_HELMET",
+      "Items.GOLDEN_HELMET",
+      "Items.DIAMOND_HELMET",
+      "Items.NETHERITE_HELMET"
+    ],
+    "ITEMS:minecraft:tagseeds": [
+      "Items.WHEAT_SEEDS",
+      "Items.PUMPKIN_SEEDS",
+      "Items.TORCHFLOWER_SEEDS",
+      "Items.MELON_SEEDS",
+      "Items.BEETROOT_SEEDS",
+      "Items.CARROT",
+      "Items.POTATO",
+      "Items.CHORUS_FRUIT"
+    ],
+    "ITEMS:forge:tag_chest": [
+      "CUSTOM:NetherrackArmor.body",
+      "Items.LEATHER_CHESTPLATE",
+      "Items.CHAINMAIL_CHESTPLATE",
+      "Items.IRON_CHESTPLATE",
+      "Items.GOLDEN_CHESTPLATE",
+      "Items.DIAMOND_CHESTPLATE",
+      "Items.NETHERITE_CHESTPLATE"
+    ],
+    "ITEMS:forge:tag_intake": [
+      "Blocks.STONE#0",
+      "Blocks.STONE#1",
+      "Blocks.STONE#3",
+      "Blocks.STONE#5",
+      "Blocks.SMOOTH_STONE",
+      "Blocks.GRASS",
+      "Blocks.DIRT#0",
+      "Blocks.COBBLESTONE",
+      "Blocks.MOSSY_COBBLESTONE",
+      "Blocks.PLANKS#0",
+      "Blocks.PLANKS#1",
+      "Blocks.PLANKS#2",
+      "Blocks.PLANKS#3",
+      "Blocks.PLANKS#4",
+      "Blocks.PLANKS#5",
+      "Blocks.CRIMSON_PLANKS",
+      "Blocks.WARPED_PLANKS",
+      "Blocks.SAPLING#0",
+      "Blocks.SAPLING#1",
+      "Blocks.SAPLING#2",
+      "Blocks.SAPLING#3",
+      "Blocks.SAPLING#4",
+      "Blocks.SAPLING#5",
+      "Blocks.REEDS",
+      "Blocks.SAND#0",
+      "Blocks.SAND#1",
+      "Blocks.GRAVEL",
+      "Blocks.MAGMA",
+      "Blocks.OBSIDIAN",
+      "Blocks.CRYING_OBSIDIAN",
+      "Blocks.COAL_ORE",
+      "Blocks.IRON_ORE",
+      "Blocks.REDSTONE_ORE",
+      "Blocks.LIT_REDSTONE_ORE",
+      "Blocks.GOLD_ORE",
+      "Blocks.LAPIS_ORE",
+      "Blocks.DIAMOND_ORE",
+      "Blocks.EMERALD_ORE",
+      "Blocks.QUARTZ_ORE",
+      "Blocks.NETHER_GOLD_ORE",
+      "Blocks.GILDED_BLACKSTONE",
+      "Blocks.COAL_BLOCK",
+      "Blocks.IRON_BLOCK",
+      "Blocks.REDSTONE_BLOCK",
+      "Blocks.GOLD_BLOCK",
+      "Blocks.LAPIS_BLOCK",
+      "Blocks.DIAMOND_BLOCK",
+      "Blocks.EMERALD_BLOCK",
+      "Blocks.NETHERITE_BLOCK",
+      "Blocks.QUARTZ_BLOCK#0",
+      "Blocks.QUARTZ_BLOCK#1",
+      "Blocks.QUARTZ_BLOCK#2",
+      "Blocks.QUARTZ_BLOCK#3",
+      "Blocks.QUARTZ_BRICKS",
+      "Blocks.SLIME_BLOCK",
+      "Blocks.LOG",
+      "Blocks.LOG2",
+      "Blocks.WARPED_STEM",
+      "Blocks.CRIMSON_STEM",
+      "Blocks.STRIPPED_OAK_LOG",
+      "Blocks.STRIPPED_SPRUCE_LOG",
+      "Blocks.STRIPPED_BIRCH_LOG",
+      "Blocks.STRIPPED_JUNGLE_LOG",
+      "Blocks.STRIPPED_ACACIA_LOG",
+      "Blocks.STRIPPED_DARK_OAK_LOG",
+      "Blocks.STRIPPED_WARPED_STEM",
+      "Blocks.STRIPPED_CRIMSON_STEM",
+      "Blocks.OAK_WOOD",
+      "Blocks.SPRUCE_WOOD",
+      "Blocks.BIRCH_WOOD",
+      "Blocks.JUNGLE_WOOD",
+      "Blocks.JUNGLE_WOOD",
+      "Blocks.ACACIA_WOOD",
+      "Blocks.DARK_OAK_WOOD",
+      "Blocks.WARPED_HYPHAE",
+      "Blocks.CRIMSON_HYPHAE",
+      "Blocks.STRIPPED_OAK_WOOD",
+      "Blocks.STRIPPED_SPRUCE_WOOD",
+      "Blocks.STRIPPED_BIRCH_WOOD",
+      "Blocks.STRIPPED_JUNGLE_WOOD",
+      "Blocks.STRIPPED_ACACIA_WOOD",
+      "Blocks.STRIPPED_DARK_OAK_WOOD",
+      "Blocks.STRIPPED_WARPED_HYPHAE",
+      "Blocks.STRIPPED_CRIMSON_HYPHAE",
+      "Blocks.LEAVES",
+      "Blocks.SPONGE#0",
+      "Blocks.SANDSTONE#0",
+      "Blocks.SANDSTONE#1",
+      "Blocks.SANDSTONE#2",
+      "Blocks.SMOOTH_SANDSTONE",
+      "Blocks.RED_SANDSTONE#0",
+      "Blocks.RED_SANDSTONE#1",
+      "Blocks.RED_SANDSTONE#2",
+      "Blocks.SMOOTH_RED_SANDSTONE",
+      "Blocks.NOTEBLOCK",
+      "Blocks.RAIL",
+      "Blocks.GOLDEN_RAIL",
+      "Blocks.DETECTOR_RAIL",
+      "Blocks.ACTIVATOR_RAIL",
+      "Blocks.NETHER_BRICK",
+      "Blocks.CHISELED_NETHER_BRICKS",
+      "Blocks.CRACKED_NETHER_BRICKS",
+      "Blocks.RED_NETHER_BRICK",
+      "Blocks.NETHERRACK",
+      "Blocks.WARPED_NYLIUM",
+      "Blocks.CRIMSON_NYLIUM",
+      "Blocks.SOUL_SAND",
+      "Blocks.SOUL_SOIL",
+      "Blocks.GLOWSTONE",
+      "Blocks.SHROOMLIGHT",
+      "Blocks.BONE_BLOCK",
+      "Blocks.NETHER_WART_BLOCK",
+      "Blocks.STONEBRICK#0",
+      "Blocks.STONEBRICK#1",
+      "Blocks.STONEBRICK#2",
+      "Blocks.STONEBRICK#3",
+      "Blocks.END_STONE",
+      "Blocks.END_BRICKS",
+      "Blocks.PURPUR_BLOCK",
+      "Blocks.PURPUR_PILLAR",
+      "Blocks.PURPUR_DOUBLE_SLAB",
+      "Blocks.WOOL#0",
+      "Blocks.WOOL#1",
+      "Blocks.WOOL#2",
+      "Blocks.WOOL#3",
+      "Blocks.WOOL#4",
+      "Blocks.WOOL#5",
+      "Blocks.WOOL#6",
+      "Blocks.WOOL#7",
+      "Blocks.WOOL#8",
+      "Blocks.WOOL#9",
+      "Blocks.WOOL#10",
+      "Blocks.WOOL#11",
+      "Blocks.WOOL#12",
+      "Blocks.WOOL#13",
+      "Blocks.WOOL#14",
+      "Blocks.WOOL#15",
+      "Blocks.HARDENED_CLAY",
+      "Blocks.STAINED_HARDENED_CLAY#0",
+      "Blocks.STAINED_HARDENED_CLAY#1",
+      "Blocks.STAINED_HARDENED_CLAY#2",
+      "Blocks.STAINED_HARDENED_CLAY#3",
+      "Blocks.STAINED_HARDENED_CLAY#4",
+      "Blocks.STAINED_HARDENED_CLAY#5",
+      "Blocks.STAINED_HARDENED_CLAY#6",
+      "Blocks.STAINED_HARDENED_CLAY#7",
+      "Blocks.STAINED_HARDENED_CLAY#8",
+      "Blocks.STAINED_HARDENED_CLAY#9",
+      "Blocks.STAINED_HARDENED_CLAY#10",
+      "Blocks.STAINED_HARDENED_CLAY#11",
+      "Blocks.STAINED_HARDENED_CLAY#12",
+      "Blocks.STAINED_HARDENED_CLAY#13",
+      "Blocks.STAINED_HARDENED_CLAY#14",
+      "Blocks.STAINED_HARDENED_CLAY#15",
+      "Blocks.GLASS",
+      "Items.DIAMOND",
+      "Items.DYE#4",
+      "Items.DYE#15",
+      "Items.COAL#0",
+      "Items.IRON_INGOT",
+      "Items.GOLD_INGOT",
+      "Items.GOLD_NUGGET",
+      "Items.NETHERITE_INGOT",
+      "Items.NETHERITE_SCRAP",
+      "Items.EMERALD",
+      "Items.QUARTZ",
+      "Items.WHEAT",
+      "Items.FLINT",
+      "Items.APPLE",
+      "Items.FEATHER",
+      "Items.STRING",
+      "Items.GUNPOWDER",
+      "Items.BEEF",
+      "Items.PORKCHOP",
+      "Items.CHICKEN",
+      "Items.BONE",
+      "Items.LEATHER",
+      "Blocks.LOG",
+      "Blocks.LOG#0",
+      "Blocks.LOG#1",
+      "Blocks.LOG#2",
+      "Blocks.LOG#3",
+      "Blocks.LOG2#0",
+      "Blocks.LOG2#1"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:EasyAnvil",
+      "~CUSTOM:TreeCrop",
+      "~CUSTOM:Crop"
+    ],
+    "ITEMS:forge:tag_stick": [
+      "CUSTOM:NetherStick",
+      "Items.STICK"
+    ],
+    "ITEMS:forge:planks": [
+      "Blocks.PLANKS#0",
+      "Blocks.PLANKS#1",
+      "Blocks.PLANKS#2",
+      "Blocks.PLANKS#3",
+      "Blocks.PLANKS#4",
+      "Blocks.PLANKS#5",
+      "Blocks.CRIMSON_PLANKS",
+      "Blocks.WARPED_PLANKS"
+    ],
+    "ITEMS:forge:tag_boots": [
+      "CUSTOM:NetherrackArmor.boots",
+      "CUSTOM:NetherrackArmor.boots",
+      "Items.LEATHER_BOOTS",
+      "Items.CHAINMAIL_BOOTS",
+      "Items.IRON_BOOTS",
+      "Items.GOLDEN_BOOTS",
+      "Items.DIAMOND_BOOTS",
+      "Items.NETHERITE_BOOTS"
+    ],
+    "ITEMS:minecraft:tagstone": [
+      "Blocks.STONE#0",
+      "Blocks.STONE#1",
+      "Blocks.STONE#3",
+      "Blocks.STONE#4",
+      "Blocks.STONE#5",
+      "Blocks.STONE#6",
+      "Blocks.SMOOTH_STONE",
+      "Blocks.DEEPSLATE",
+      "Blocks.COBBLED_DEEPSLATE",
+      "Blocks.POLISHED_DEEPSLATE",
+      "Blocks.DEEPSLATE_TILES",
+      "Blocks.DEEPSLATE_BRICKS",
+      "Blocks.CALCITE",
+      "Blocks.DRIPSTONE_BLOCK",
+      "Blocks.COBBLESTONE",
+      "Blocks.MOSSY_COBBLESTONE",
+      "Blocks.DIRT#2",
+      "Blocks.CRACKED_DEEPSLATE_TILES"
+    ],
+    "ITEMS:minecraft:tagsaplings": [
+      "Blocks.SAPLING#0",
+      "Blocks.SAPLING#1",
+      "Blocks.SAPLING#2",
+      "Blocks.SAPLING#3",
+      "Blocks.SAPLING#4",
+      "Blocks.SAPLING#5",
+      "Blocks.CHERRY_SAPLING",
+      "Blocks.BAMBOO_SAPLING",
+      "Blocks.REEDS",
+      "Items.REEDS",
+      "Blocks.CACTUS",
+      "Blocks.MANGROVE_PROPAGULE"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "gui.easysurvival.crop_gui.label_seed": "Seed",
+      "gui.easysurvival.teleport_set_gui.TeleportName": "Name",
+      "gui.easysurvival.teleport_set_gui.button_set": "Set",
+      "gui.easysurvival.easy_smelter_gui.label_easysmelter": "EasySmelter",
+      "block.easysurvival.spawner_creeper": "Spawner Creeper",
+      "itemGroup.tabeasy_survival": "Easy Survival",
+      "block.easysurvival.spawner_pillager": "Spawner Pillager",
+      "item.easysurvival.portable_crafting_table": "Portable Crafting Table",
+      "gui.easysurvival.easy_enchantment_table_gui.label_easyenchant": "EasyEnchant",
+      "item.easysurvival.quarz_axe": "Quarz Axe",
+      "gui.easysurvival.teleporter_gui.button_teleport": "Teleport",
+      "item.easysurvival.basalt_sword": "Basalt Sword",
+      "block.easysurvival.crop": "Crop",
+      "gui.easysurvival.easy_saw_gui.label_template": "Template",
+      "gui.easysurvival.easy_fridge_gui.label_easyfridge": "EasyFridge",
+      "item.easysurvival.netherrack_armor_leggings": "Netherrack Leggings",
+      "gui.easysurvival.teleporter_gui.label_teleport_1": "Teleport 1",
+      "block.easysurvival.easy_intake": "Easy Intake",
+      "item.easysurvival.netherrack_armor_chestplate": "Netherrack Chestplate",
+      "block.easysurvival.spawner_ghast": "Spawner Ghast",
+      "gui.easysurvival.crop_gui.label_growcrop": "GrowCrop",
+      "item.easysurvival.netherrack_sword": "Netherrack Sword",
+      "gui.easysurvival.teleporter_gui.label_teleport_2": "Teleport 2",
+      "block.easysurvival.spawner_evoker": "Spawner Evoker",
+      "block.easysurvival.spawner_blaze": "Spawner Blaze",
+      "gui.easysurvival.easy_saw_gui.label_easysaw": "EasySaw",
+      "block.easysurvival.easy_saw": "Easy Saw",
+      "gui.easysurvival.teleport_set_gui.label_set_teleport": "Set Teleport",
+      "item.easysurvival.netherrack_axe": "Netherrack Axe",
+      "block.easysurvival.easy_fridge": "Easy Fridge",
+      "block.easysurvival.spawner_slime": "Spawner Slime",
+      "block.easysurvival.easy_anvil": "Easy Anvil",
+      "gui.easysurvival.tree_crop_gui.label_treecrop": "TreeCrop",
+      "item.easysurvival.basalt_axe": "Basalt Axe",
+      "item_group.easysurvival.easy_survival": "Easy Survival",
+      "gamerule.spawnersActive": "Spawners active",
+      "item.easysurvival.quarz_sword": "Quarz Sword",
+      "block.easysurvival.tree_crop": "Tree Crop",
+      "gui.easysurvival.easy_forge_gui.label_empty": "\u003e\u003e",
+      "block.easysurvival.teleporter_plate": "Teleporter Plate",
+      "item.easysurvival.netherrack_pickaxe": "Netherrack Pickaxe",
+      "gui.easysurvival.teleporter_gui.label_easyteleport": "EasyTeleport",
+      "item.easysurvival.basalt_pickaxe": "Basalt Pickaxe",
+      "block.easysurvival.easy_converter": "Easy Converter",
+      "item.easysurvival.netherrack_armor_helmet": "Netherrack Helmet",
+      "gui.easysurvival.easy_enchantment_table_gui.label_item": "Item",
+      "block.easysurvival.easy_smelter": "Easy Smelter",
+      "item.easysurvival.netherrack_armor_boots": "Netherrack Boots",
+      "block.easysurvival.spawner_wither_skelett": "Spawner Wither Skeleton",
+      "gui.easysurvival.easy_enchantment_table_gui.label_lapis_lazuli": "Lapis Lazuli",
+      "block.easysurvival.easy_forge": "Easy Forge",
+      "gamerule.spawnersActive.description": "Sets if custom spawners are active or inactive",
+      "block.easysurvival.easy_forge_auto": "Easy Forge",
+      "item.easysurvival.quarz_pickaxe": "Quarz Pickaxe",
+      "item.easysurvival.netherrack_shovel": "Netherrack Shovel",
+      "item.easysurvival.quarz_hoe": "Quarz Hoe",
+      "item.easysurvival.netherrack_hoe": "Netherrack Hoe",
+      "gui.easysurvival.teleporter_gui.button_teleport1": "Teleport",
+      "gui.easysurvival.easy_converter_gui.label_easyconverter": "EasyConverter",
+      "gui.easysurvival.easy_anvil_gui.label_ingot": "Ingot",
+      "item.easysurvival.basalt_shovel": "Basalt Shovel",
+      "gui.easysurvival.easy_anvil_gui.label_easyanvil": "EasyAnvil",
+      "gui.easysurvival.easy_intake_gui.label_easyintake": "EasyIntake",
+      "item.easysurvival.basalt_hoe": "Basalt Hoe",
+      "item.easysurvival.nether_stick": "Nether Stick",
+      "block.easysurvival.easy_enchantment_table": "Easy Enchantment Table",
+      "gui.easysurvival.easy_forge_gui.label_easyforge": "EasyForge",
+      "item.easysurvival.quarz_shovel": "Quarz Shovel"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Crop_Plants",
+        "children": []
+      },
+      {
+        "name": "Crop_Trees",
+        "children": []
+      },
+      {
+        "name": "Netherrack_Tools",
+        "children": []
+      },
+      {
+        "name": "Basalt_Tools",
+        "children": []
+      },
+      {
+        "name": "Quarz_Tools",
+        "children": []
+      },
+      {
+        "name": "Misc_Recipes",
+        "children": []
+      },
+      {
+        "name": "Spawner",
+        "children": []
+      },
+      {
+        "name": "EasyEnchantmentTable",
+        "children": []
+      },
+      {
+        "name": "Easy_Anvil",
+        "children": []
+      },
+      {
+        "name": "Easy_Forge",
+        "children": []
+      },
+      {
+        "name": "DedicatedStorage",
+        "children": []
+      },
+      {
+        "name": "Teleporter",
+        "children": []
+      },
+      {
+        "name": "Easy_Fridge",
+        "children": []
+      },
+      {
+        "name": "Easy_Saw",
+        "children": []
+      },
+      {
+        "name": "Easy_Smelter",
+        "children": []
+      },
+      {
+        "name": "Easy_Converter",
+        "children": []
+      },
+      {
+        "name": "Portable_CraftingTable",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "easysurvival",
+    "modName": "EasySurvival",
+    "version": "1.0.0",
+    "author": "netqu, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "ch.netquick.easysurvival"
+  },
+  "mcreatorVersion": 202400110712
+}

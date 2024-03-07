@@ -1,0 +1,13 @@
+{
+  "parent": "easysurvival:custom/seedcrop",
+  "textures": {
+    "all": "easysurvival:block/texture",
+    "particle": "easysurvival:block/texture",
+    "texture": "easysurvival:block/texture",
+    "Glas": "easysurvival:block/glas",
+    "schwarz": "easysurvival:block/schwarz",
+    "texture1": "easysurvival:block/texture1",
+    "texture2": "easysurvival:block/texture2"
+  },
+  "render_type": "solid"
+}

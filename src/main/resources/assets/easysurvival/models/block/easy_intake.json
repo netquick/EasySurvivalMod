@@ -1,0 +1,11 @@
+{
+  "parent": "easysurvival:custom/barrelintake",
+  "textures": {
+    "all": "easysurvival:block/barrel",
+    "particle": "easysurvival:block/barrel",
+    "barrel": "easysurvival:block/barrel",
+    "barreltop": "easysurvival:block/barreltop",
+    "wood": "easysurvival:block/wood"
+  },
+  "render_type": "solid"
+}

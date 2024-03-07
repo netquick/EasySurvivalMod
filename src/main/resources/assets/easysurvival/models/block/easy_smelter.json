@@ -1,0 +1,11 @@
+{
+  "parent": "easysurvival:custom/smeltblock",
+  "textures": {
+    "all": "easysurvival:block/metal",
+    "particle": "easysurvival:block/metal",
+    "pottexture": "easysurvival:block/pottexture",
+    "metal": "easysurvival:block/metal",
+    "smeltblock": "easysurvival:block/smeltblock"
+  },
+  "render_type": "solid"
+}

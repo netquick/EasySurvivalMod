@@ -1,0 +1,9 @@
+{
+  "parent": "easysurvival:custom/anvil",
+  "textures": {
+    "all": "easysurvival:block/anviltexture",
+    "particle": "easysurvival:block/anviltexture",
+    "texture": "easysurvival:block/anviltexture"
+  },
+  "render_type": "solid"
+}

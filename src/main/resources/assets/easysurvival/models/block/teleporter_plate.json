@@ -1,0 +1,10 @@
+{
+  "parent": "easysurvival:custom/teleporter",
+  "textures": {
+    "all": "easysurvival:block/plate",
+    "particle": "easysurvival:block/plate",
+    "Border": "easysurvival:block/border",
+    "Plate": "easysurvival:block/plate"
+  },
+  "render_type": "solid"
+}

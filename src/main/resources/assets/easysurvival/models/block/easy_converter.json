@@ -1,0 +1,11 @@
+{
+  "parent": "easysurvival:custom/crafter",
+  "textures": {
+    "all": "easysurvival:block/bowl",
+    "particle": "easysurvival:block/bowl",
+    "Energy": "easysurvival:block/energy",
+    "Box": "easysurvival:block/box",
+    "Bowl": "easysurvival:block/bowl"
+  },
+  "render_type": "solid"
+}

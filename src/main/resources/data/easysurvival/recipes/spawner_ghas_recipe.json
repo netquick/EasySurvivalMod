@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:obsidian"
+    },
+    "b": {
+      "item": "minecraft:ghast_tear"
+    }
+  },
+  "result": {
+    "item": "easysurvival:spawner_ghast",
+    "count": 1
+  }
+}

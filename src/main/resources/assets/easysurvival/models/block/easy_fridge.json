@@ -1,0 +1,10 @@
+{
+  "parent": "easysurvival:custom/fridge_oriented",
+  "textures": {
+    "all": "easysurvival:block/fridgefront",
+    "particle": "easysurvival:block/fridgefront",
+    "texture": "easysurvival:block/fridgefront",
+    "Sides": "easysurvival:block/sides"
+  },
+  "render_type": "solid"
+}

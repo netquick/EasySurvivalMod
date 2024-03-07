@@ -1,0 +1,9 @@
+{
+  "parent": "easysurvival:custom/spawner",
+  "textures": {
+    "all": "easysurvival:block/monster_spawner",
+    "particle": "easysurvival:block/monster_spawner",
+    "texture": "easysurvival:block/spawnertexture"
+  },
+  "render_type": "solid"
+}
