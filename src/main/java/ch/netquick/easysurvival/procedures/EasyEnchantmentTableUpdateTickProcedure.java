@@ -1096,6 +1096,30 @@ public class EasyEnchantmentTableUpdateTickProcedure {
 							}
 						}.getItemStack(world, BlockPos.containing(x, y, z), 0));
 					}
+					if (tool.getEnchantmentLevel(Enchantments.MOB_LOOTING) == 0) {
+						tool.enchant(Enchantments.MOB_LOOTING, 3);
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 6;
+								final ItemStack _setstack = tool.copy();
+								_setstack.setCount(1);
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable)
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+								});
+							}
+						}
+						tool = (new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								BlockEntity _ent = world.getBlockEntity(pos);
+								if (_ent != null)
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+								return _retval.get();
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 0));
+					}
 				}
 				if (tool.getItem() == Items.FISHING_ROD) {
 					if (tool.getEnchantmentLevel(Enchantments.FISHING_LUCK) == 0) {
