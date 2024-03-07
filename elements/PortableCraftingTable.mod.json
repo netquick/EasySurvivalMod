@@ -32,7 +32,7 @@
     "glowCondition": {
       "fixedValue": false
     },
-    "guiBoundTo": "CraftingStickGUI",
+    "guiBoundTo": "<NONE>",
     "inventorySize": 10,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {

@@ -1727,9 +1727,8 @@
       "registry_name": "portable_crafting_table",
       "metadata": {
         "files": [
-          "src/main/java/ch/netquick/easysurvival/item/inventory/PortableCraftingTableInventoryCapability.java",
-          "src/main/java/ch/netquick/easysurvival/item/PortableCraftingTableItem.java",
-          "src/main/resources/assets/easysurvival/models/item/portable_crafting_table.json"
+          "src/main/resources/assets/easysurvival/models/item/portable_crafting_table.json",
+          "src/main/java/ch/netquick/easysurvival/item/PortableCraftingTableItem.java"
         ]
       },
       "path": "~/Portable_CraftingTable"
@@ -2253,11 +2252,11 @@
       "registry_name": "easy_smelter",
       "metadata": {
         "files": [
-          "src/main/resources/assets/easysurvival/models/block/easy_smelter.json",
           "src/main/resources/assets/easysurvival/blockstates/easy_smelter.json",
-          "src/main/java/ch/netquick/easysurvival/block/EasySmelterBlock.java",
+          "src/main/resources/assets/easysurvival/models/block/easy_smelter.json",
+          "src/main/resources/assets/easysurvival/models/item/easy_smelter.json",
           "src/main/java/ch/netquick/easysurvival/block/entity/EasySmelterBlockEntity.java",
-          "src/main/resources/assets/easysurvival/models/item/easy_smelter.json"
+          "src/main/java/ch/netquick/easysurvival/block/EasySmelterBlock.java"
         ]
       },
       "path": "~/Easy_Smelter"
@@ -2554,7 +2553,7 @@
       "type": "procedure",
       "sortid": 142,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "open_crafting_gui",
       "metadata": {
         "files": [

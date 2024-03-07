@@ -755,6 +755,56 @@ public class EasyEnchantmentTableUpdateTickProcedure {
 						}.getItemStack(world, BlockPos.containing(x, y, z), 0));
 					}
 				}
+				if (tool.getItem() == Items.ELYTRA) {
+					if (tool.getEnchantmentLevel(Enchantments.UNBREAKING) == 0) {
+						tool.enchant(Enchantments.UNBREAKING, 3);
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 1;
+								final ItemStack _setstack = tool.copy();
+								_setstack.setCount(1);
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable)
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+								});
+							}
+						}
+						tool = (new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								BlockEntity _ent = world.getBlockEntity(pos);
+								if (_ent != null)
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+								return _retval.get();
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 0));
+					}
+					if (tool.getEnchantmentLevel(Enchantments.MENDING) == 0) {
+						tool.enchant(Enchantments.MENDING, 1);
+						{
+							BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+							if (_ent != null) {
+								final int _slotid = 2;
+								final ItemStack _setstack = tool.copy();
+								_setstack.setCount(1);
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+									if (capability instanceof IItemHandlerModifiable)
+										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
+								});
+							}
+						}
+						tool = (new Object() {
+							public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
+								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+								BlockEntity _ent = world.getBlockEntity(pos);
+								if (_ent != null)
+									_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+								return _retval.get();
+							}
+						}.getItemStack(world, BlockPos.containing(x, y, z), 0));
+					}
+				}
 				if (tool.getItem() == Items.TRIDENT) {
 					if (tool.getEnchantmentLevel(Enchantments.UNBREAKING) == 0) {
 						tool.enchant(Enchantments.UNBREAKING, 3);

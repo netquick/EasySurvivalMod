@@ -15,27 +15,25 @@ import net.minecraft.core.BlockPos;
 
 import io.netty.buffer.Unpooled;
 
-import ch.netquick.easysurvival.world.inventory.CropGUIMenu;
+import ch.netquick.easysurvival.world.inventory.EasyIntakeGUIMenu;
 
 public class OpenCraftingGUIProcedure {
-    public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
-        if (!(entity instanceof Player))
-            return;
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		if (entity == null)
+			return;
+		if (entity instanceof ServerPlayer _ent) {
+			BlockPos _bpos = BlockPos.containing(x, y, z);
+			NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
+				@Override
+				public Component getDisplayName() {
+					return Component.literal("EasyIntakeGUI");
+				}
 
-        Player player = (Player) entity;
-        BlockPos pos = new BlockPos((int) Math.floor(x), (int) Math.floor(y), (int) Math.floor(z)); // Convert doubles to integers
-
-        player.openMenu(new MenuProvider() {
-            @Override
-            public Component getDisplayName() {
-                return null; // You can return a custom display name if needed
-            }
-
-            @Override
-            public AbstractContainerMenu createMenu(int windowId, Inventory playerInventory, Player player) {
-                // Instantiate CropGUIMenu with proper constructor arguments
-                return new CropGUIMenu(windowId, playerInventory, new FriendlyByteBuf(Unpooled.buffer()));
-            }
-        });
-    }
+				@Override
+				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+					return new EasyIntakeGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+				}
+			}, _bpos);
+		}
+	}
 }
