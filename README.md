@@ -1,4 +1,6 @@
 # EasySurvival
+Version 1.20.1 Created with MCreator 2024.1
+
 This mod is designed to make life a bit easier when playing in survival mode. As we play survival with the goal to soon kill ender dragon and move forward we still want to be able to build a nice base and to handle things an easy way. Things we repeatedly ran into we tried to cover with miscelaneous functions in this mod. Feel free to use is for your own minecraft experience.
 
 Blocks:
